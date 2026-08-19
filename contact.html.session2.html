@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Form</title>
+</head>
+
+<body>
+
+    <form action="about.html" autocomplete="off" method="post">
+
+        <label>First Name :</label>
+        <input type="text"
+               name="firstname"
+               placeholder="Enter your first Name"
+               required
+               autofocus>
+
+        <br>
+
+        <label>Last Name :</label>
+        <input type="text"
+               name="lastname"
+               placeholder="Enter your Last Name"
+               maxlength="20">
+
+        <h1>
+            I am Aml Osama, student of Computer science and information
+        </h1>
+
+        <label>Email</label>
+        <input type="email"
+               name="email"
+               placeholder="Enter your Email"
+               required>
+
+        <br><br>
+
+        <label>Shipping Area</label>
+
+        <input type="text"
+               name="area"
+               list="cities"
+               placeholder="Choose city">
+
+        <datalist id="cities">
+            <option value="cairo">
+            <option value="alex">
+            <option value="mansoura">
+            <option value="giza">
+        </datalist>
+
+        <input type="text"
+               value="cairo"
+               readonly>
+
+        <br><br>
+
+        <input type="password"
+               name="password"
+               placeholder="enter your password"
+               minlength="8"
+               required>
+
+        <br>
+
+        <label>Gender</label>
+
+        <input type="radio"
+               name="gender"
+               value="male">
+        Male
+
+        <input type="radio"
+               name="gender"
+               value="female"
+               checked>
+        Female
+
+        <br><br>
+
+        <label>courses</label>
+
+        <input type="checkbox"
+               name="html">
+        Html
+
+        <input type="checkbox"
+               name="css">
+        Css
+
+        <input type="checkbox"
+               name="js"
+               checked>
+        Js
+
+        <input type="checkbox"
+               name="bootstrap"
+               checked>
+        Bootstrap
+
+        <br><br>
+
+        <label>Age</label>
+
+        <input type="number"
+               name="age"
+               min="18"
+               max="60">
+
+        <br>
+
+        <select name="track" multiple size="4">
+
+            <option>please choose your track</option>
+            <option>Frontend</option>
+            <option>Backend</option>
+            <option>Network</option>
+
+        </select>
+
+        <br>
+
+        <input type="file"
+               name="image"
+               accept=".png">
+
+        <br>
+
+        <label>Homepage:</label>
+
+        <input type="text">
+
+        <input type="url"
+               name="homepage"
+               placeholder="https://example.com">
+
+        <input type="text">
+
+        <br><br>
+
+        <input type="date">
+
+        <input type="datetime-local">
+
+        <input type="time">
+
+        <br><br>
+
+        <input type="color">
+
+        <input type="range"
+               min="0"
+               max="100"
+               value="50">
+
+        <br>
+
+        <label>ID</label>
+
+        <input type="text"
+               name="id"
+               maxlength="14">
+
+        <br><br>
+
+        <textarea name="comment"
+                  rows="5"
+                  cols="45"
+                  placeholder="enter your comment"></textarea>
+
+        <br><br>
+
+        <input type="submit"
+               value="login">
+
+        <button type="submit">
+            Register
+        </button>
+
+        <input type="reset"
+               value="clear Data">
+
+        <button type="reset">
+            Clear Info
+        </button>
+
+
+        <!-- datalist => search -->
+
+        <br><br>
+
+        <input type="text"
+               name="search"
+               list="searchlist"
+               placeholder="Search">
+
+        <datalist id="searchlist">
+            <option value="HTML">
+            <option value="CSS">
+            <option value="JavaScript">
+            <option value="Bootstrap">
+        </datalist>
+        <!-- input file => images => .png -->
+
+        <br><br>
+
+        <input type="file"
+               name="photo"
+               accept=".png">
+
+
+        <!-- input text => mobile 11 number , start with 010/012/015 -->
+
+        <br><br>
+
+        <input type="text"
+               name="mobile"
+               placeholder="Enter mobile number"
+               pattern="(010|012|015)[0-9]{8}"
+               maxlength="11">
+
+
+        <!-- fieldset , legend => search -->
+
+        <br><br>
+
+        <fieldset>
+
+            <legend>Search</legend>
+
+            <input type="text"
+                   placeholder="Search here">
+
+            <button type="submit">
+                Search
+            </button>
+
+        </fieldset>
+
+    </form>
+
+</body>
+
+</html>
