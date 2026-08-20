@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        120deg,
+        #b04bd9 0%,
+        #6538df 50%,
+        #2435e8 100%
+    );
+
+    min-height: 100vh;
+    padding: 8%;
+}
+
+.container {
+    width: 75%;
+    margin: auto;
+    background-color: white;
+    font-size: 0;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* LEFT */
+.left {
+    display: inline-block;
+    vertical-align: top;
+
+    width: 50%;
+    min-height: 500px;
+
+    padding: 12% 7%;
+
+    background: linear-gradient(
+        135deg,
+        #13a9c7 0%,
+        #00b9a8 100%
+    );
+
+    color: white;
+    text-align: center;
+
+    font-size: 16px;
+}
+
+.left h1 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.left p {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* RIGHT */
+.right {
+    display: inline-block;
+    vertical-align: top;
+
+    width: 50%;
+    min-height: 500px;
+
+    padding: 5% 6%;
+
+    background-color: #fff;
+
+    font-size: 16px;
+}
+
+.right h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+form {
+    width: 100%;
+}
+
+label {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 5px;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+textarea {
+    height: 70px;
+    resize: none;
+}
+
+button {
+    display: block;
+    width: 35%;
+    margin: 5px auto 0;
+
+    padding: 10px;
+
+    border: none;
+    border-radius: 20px;
+
+    background-color: #12a9bc;
+    color: white;
+
+    font-size: 11px;
+    cursor: pointer;
+}
