@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.card {
+  position: relative;
+  width: 320px;
+  background-color: #f1f3f5;
+  border-radius: 6px;
+  padding: 24px 20px 20px 20px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.card-content {
+  position: relative;
+  z-index: 2;
+}
+
+.arrow-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #2b7a62;
+  color: #ffffff;
+  width: 32px;
+  height: 32px;
+  border-bottom-left-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  z-index: 3;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card h3 {
+  font-size: 18px;
+  color: #212529;
+  margin-bottom: 8px;
+  transition: color 0.4s ease;
+}
+
+.card p {
+  font-size: 14px;
+  color: #6c757d;
+  line-height: 1.4;
+  transition: color 0.4s ease;
+}
+
+.card .icon {
+  margin-bottom: 12px;
+  color: #495057;
+  display: flex;
+  align-items: center;
+}
+
+.card-1 {
+  transition: color 0.4s ease;
+}
+
+.card-1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 32px;
+  height: 32px;
+  background-color: #2b7a62;
+  border-bottom-left-radius: 16px;
+  z-index: 1;
+  transform-origin: top right;
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.card-1:hover::before {
+  width: 100%;
+  height: 100%;
+  border-bottom-left-radius: 0;
+}
+
+.card-1:hover h3,
+.card-1:hover p {
+  color: #ffffff;
+}
+
+.card-4::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 32px;
+  height: 32px;
+  background-color: #702562;
+  border-bottom-left-radius: 16px;
+  z-index: 1;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), height 0.4s cubic-bezier(0.4, 0, 0.2, 1), border-radius 0.4s ease;
+  transform-origin: top right;
+}
+
+.card-4:hover::before {
+  height: 100%;
+  width: 12px;
+  border-bottom-left-radius: 6px;
+}
+
+.card-4:hover .arrow-badge {
+  background-color: #702562;
+  border-bottom-left-radius: 6px;
+  width: 28px;
+}
